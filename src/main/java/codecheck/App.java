@@ -6,7 +6,7 @@ public class App {
 			if("decode".equals(args[0])) {
 				System.out.println(decode(args[1]));
 			}else if("encode".equals(args[0])) {
-				System.out.println(encode(Integer.parseInt(args[1])));
+				System.out.println(encode(Long.parseLong(args[1])));
 			}
 		}
 //		System.out.println(decode("B"));
@@ -22,10 +22,10 @@ public class App {
 
 	}
 
-	public static String encode(int inInt) {
+	public static String encode(long inInt) {
 		String result = "";
-		int temp = inInt;
-		int temp2 = 0;
+		long temp = inInt;
+		long temp2 = 0;
 		do {
 			temp2 = temp % 9;
 			if (temp2 == 0) {
@@ -53,7 +53,7 @@ public class App {
 		return result;
 	}
 
-	public static int decode(String instr) {
+	public static long decode(String instr) {
 		int result = 0;
 		String[] ar = instr.split("");
 		int j = 0;
