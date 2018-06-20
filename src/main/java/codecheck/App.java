@@ -3,22 +3,22 @@ package codecheck;
 public class App {
 	public static void main(String[] args) {
 		for (int i = 0, l = args.length; i < l; i++) {
-			if("decode".equals(args[0])) {
+			if ("decode".equals(args[0])) {
 				System.out.println(decode(args[1]));
-			}else if("encode".equals(args[0])) {
+			} else if ("encode".equals(args[0])) {
 				System.out.println(encode(Long.parseLong(args[1])));
 			}
 		}
-//		System.out.println(decode("B"));
-//		System.out.println(decode("BB"));
-//		System.out.println(decode("I"));
-//		System.out.println(decode("BA"));
-//		System.out.println();
-//		System.out.println(encode(1));
-//		System.out.println(encode(10));
-//		System.out.println(encode(8));
-//		System.out.println(encode(9));
-//		System.out.println(encode(0));
+		//		System.out.println(decode("B"));
+		//		System.out.println(decode("BB"));
+		//		System.out.println(decode("I"));
+		//		System.out.println(decode("BA"));
+		//		System.out.println();
+		//		System.out.println(encode(1));
+		//		System.out.println(encode(10));
+		//		System.out.println(encode(8));
+		//		System.out.println(encode(9));
+		//		System.out.println(encode(0));
 
 	}
 
@@ -29,23 +29,23 @@ public class App {
 		do {
 			temp2 = temp % 9;
 			if (temp2 == 0) {
-				result = result + "A";
+				result = "A" + result;
 			} else if (temp2 == 1) {
-				result = result + "B";
+				result = "B" + result;
 			} else if (temp2 == 2) {
-				result = result + "C";
+				result = "C" + result;
 			} else if (temp2 == 3) {
-				result = result + "D";
+				result = "D" + result;
 			} else if (temp2 == 4) {
-				result = result + "E";
+				result = "E" + result;
 			} else if (temp2 == 5) {
-				result = result + "F";
+				result = "F" + result;
 			} else if (temp2 == 6) {
-				result = result + "G";
+				result = "G" + result;
 			} else if (temp2 == 7) {
-				result = result + "H";
+				result = "H" + result;
 			} else if (temp2 == 8) {
-				result = result + "I";
+				result = "I" + result;
 			}
 			temp = temp / 9;
 		} while (temp > 0);
